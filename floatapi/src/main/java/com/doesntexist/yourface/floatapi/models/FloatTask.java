@@ -36,6 +36,28 @@ public class FloatTask {
     public String notes;
     @SerializedName("people_id")
     public String personId;
-    @SerializedName("person_name:")
+    @SerializedName("person_name")
     public String person_name;
+    @SerializedName("project_id")
+    public String projectId;
+    @SerializedName("project_name")
+    public String projectName;
+    @SerializedName("client_name")
+    public String clientName;
+    @SerializedName("start_date")
+    public String startDate;
+    @SerializedName("end_date")
+    public String endDate;
+    @SerializedName("hours_pd")
+    public double hoursPerDay;
+    @SerializedName("task_cal_days")
+    public double calendarDays;
+    @SerializedName("created_by")
+    public String createdBy;
+    @SerializedName("creator_id")
+    public String creatorId;
+    @SerializedName("modified_by")
+    public String modifiedBy;
+    @SerializedName("priority")
+    public String priority;
 }
