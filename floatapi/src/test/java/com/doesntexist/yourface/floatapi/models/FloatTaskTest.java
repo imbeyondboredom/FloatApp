@@ -22,12 +22,12 @@ public class FloatTaskTest {
     @Test
     public void testSampleFromJson() throws Exception {
         FloatTask task = gson.fromJson(TASK_JSON, FloatTask.class);
-        assertThat(task.id).isEqualTo("2148095612");
+        assertThat(task.id).isEqualTo(2148095612d);
         assertThat(task.name).isEqualTo("Design");
         assertThat(task.notes).isEqualTo("See related ticket.");
-        assertThat(task.personId).isEqualTo("23654");
+        assertThat(task.personId).isEqualTo(23654);
         assertThat(task.person_name).isEqualTo("Paul Artisen");
-        assertThat(task.projectId).isEqualTo("364221");
+        assertThat(task.projectId).isEqualTo(364221);
         assertThat(task.projectName).isEqualTo("Microsite");
         assertThat(task.clientName).isEqualTo("Violet City");
         assertThat(task.startDate).isEqualTo("2014-03-17");
@@ -35,7 +35,7 @@ public class FloatTaskTest {
         assertThat(task.hoursPerDay).isEqualTo(8.0);
         assertThat(task.calendarDays).isEqualTo(5);
         assertThat(task.createdBy).isEqualTo("Glenn Baron");
-        assertThat(task.creatorId).isEqualTo("135");
+        assertThat(task.creatorId).isEqualTo(135);
         assertThat(task.modifiedBy).isEqualTo("Glenn Baron");
         assertThat(task.priority).isEqualTo("0");
     }

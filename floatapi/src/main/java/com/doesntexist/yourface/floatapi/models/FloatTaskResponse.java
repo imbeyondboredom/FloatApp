@@ -14,6 +14,6 @@ public class FloatTaskResponse {
    @SerializedName("start_yr")
    public int startYear;
    @SerializedName("people")
-   ArrayList<FloatTaskPerson> people;
+   public ArrayList<FloatTaskPerson> people;
 
 }

@@ -26,9 +26,9 @@ public class FloatTaskResponseTest {
         assertThat(response.startYear).isEqualTo(2016);
         assertThat(response.people).isNotNull().isNotEmpty();
         assertThat(response.people.size()).isEqualTo(2);
-        assertThat(response.people.get(0).personId).isEqualTo("74601");
+        assertThat(response.people.get(0).personId).isEqualTo(74601);
         assertThat(response.people.get(0).tasks.size()).isEqualTo(1);
-        assertThat(response.people.get(0).tasks.get(0).id).isEqualTo("3454197");
+        assertThat(response.people.get(0).tasks.get(0).id).isEqualTo(3454197);
 
     }
 

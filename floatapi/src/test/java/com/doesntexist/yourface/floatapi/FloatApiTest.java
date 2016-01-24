@@ -1,5 +1,7 @@
 package com.doesntexist.yourface.floatapi;
 
+import com.doesntexist.yourface.floatapi.models.FloatPersonResponse;
+import com.doesntexist.yourface.floatapi.models.FloatProjectResponse;
 import com.doesntexist.yourface.floatapi.models.FloatTaskResponse;
 
 import org.junit.Before;
@@ -51,6 +53,22 @@ public class FloatApiTest {
     public void testGetTasks() throws Exception {
         Call<FloatTaskResponse> responseCall = api.getTasks();
         retrofit2.Response<FloatTaskResponse> response = responseCall.execute();
+        assertThat(response.isSuccess()).isTrue();
+    }
+
+    @Test
+    @Ignore
+    public void testGetProjects() throws Exception {
+        Call<FloatProjectResponse> responseCall = api.getProjects();
+        retrofit2.Response<FloatProjectResponse> response = responseCall.execute();
+        assertThat(response.isSuccess()).isTrue();
+    }
+
+    @Test
+    @Ignore
+    public void testGetPeople() throws Exception {
+        Call<FloatPersonResponse> responseCall = api.getPeople();
+        retrofit2.Response<FloatPersonResponse> response = responseCall.execute();
         assertThat(response.isSuccess()).isTrue();
     }
 

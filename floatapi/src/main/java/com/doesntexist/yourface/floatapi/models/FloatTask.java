@@ -29,17 +29,17 @@ public class FloatTask {
     }
      */
     @SerializedName("task_id")
-    public String id;
+    public double id;
     @SerializedName("task_name")
     public String name;
     @SerializedName("task_notes")
     public String notes;
     @SerializedName("people_id")
-    public String personId;
+    public int personId;
     @SerializedName("person_name")
     public String person_name;
     @SerializedName("project_id")
-    public String projectId;
+    public int projectId;
     @SerializedName("project_name")
     public String projectName;
     @SerializedName("client_name")
@@ -55,7 +55,7 @@ public class FloatTask {
     @SerializedName("created_by")
     public String createdBy;
     @SerializedName("creator_id")
-    public String creatorId;
+    public double creatorId;
     @SerializedName("modified_by")
     public String modifiedBy;
     @SerializedName("priority")

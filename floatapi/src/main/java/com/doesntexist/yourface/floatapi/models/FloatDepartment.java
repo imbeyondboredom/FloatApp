@@ -5,5 +5,5 @@ package com.doesntexist.yourface.floatapi.models;
  */
 public class FloatDepartment {
     public String name;
-    public String id;
+    public double id;
 }

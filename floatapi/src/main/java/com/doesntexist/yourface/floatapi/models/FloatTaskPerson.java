@@ -17,7 +17,7 @@ public class FloatTaskPerson {
      */
 
     @SerializedName("people_id")
-    public String personId;
+    public double personId;
     @SerializedName("tasks")
     public ArrayList<FloatTask> tasks;
 }
